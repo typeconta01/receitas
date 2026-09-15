@@ -1,0 +1,63 @@
+/** Substitua "#" pelo link real do checkout (Hotmart, Kiwify, Kirvano, etc.) */
+export const CHECKOUT_URL = "#";
+
+export const SITE = {
+  name: "Semana Resolvida™",
+  shortName: "Semana Resolvida",
+  price: "69,90",
+  priceFull: "309",
+  priceMid: "197",
+  priceAlt: "97",
+  guaranteeDays: 7,
+} as const;
+
+export const IMAGES = {
+  logo: "/images/logo-semana-resolvida.webp",
+  hero: "/images/hero-topo.webp",
+  mealPrep: "/images/lifestyle-meal-prep.webp",
+  prepare: "/images/lifestyle-prepare.webp",
+  bowl: "/images/food-omelete.webp",
+  marmitas: "/images/food-sanduiches.webp",
+  breakfast: "/images/food-cafe-manha.webp",
+  chickenPlate: "/images/food-frango-pure.webp",
+  dessert: "/images/food-momento-doce.webp",
+  express: "/images/food-receitas-express.webp",
+  cookingStep: "/images/food-cozinha-passo.webp",
+  planning: "/images/lifestyle-planning.webp",
+  methodCover: "/images/method-cover.webp",
+  guideCover: "/images/guide-cover-mealplan.webp",
+  ingredients: "/images/lifestyle-ingredients.webp",
+  shoppingCart: "/images/lifestyle-carrinho.webp",
+  painRush: "/images/pain-rush.webp",
+  painDelivery: "/images/pain-delivery.webp",
+  painPlanning: "/images/pain-planning.webp",
+  painFridge: "/images/pain-fridge.webp",
+  appHome: "/images/app-phone-home.webp",
+  appPhonesTrio: "/images/app-phones-trio.webp",
+  appCover: "/images/app-cover.webp",
+  foodReal: [
+    "/images/food-real-1.webp",
+    "/images/food-real-2.webp",
+    "/images/food-real-3.webp",
+    "/images/food-real-4.webp",
+    "/images/food-real-5.webp",
+    "/images/food-real-6.webp",
+  ],
+  whatsapp: [
+    "/images/whats-1.webp",
+    "/images/whats-2.webp",
+    "/images/whats-3.webp",
+  ],
+  appRecipes: "/images/app-screen-recipes.webp",
+  appMenu: "/images/app-screen-menu.webp",
+  appCardapiosPhones: "/images/app-cardapios-phones.webp",
+  seal: "/images/selo-garantia-7dias.webp",
+  avatars: [
+    "/images/avatar-1.webp",
+    "/images/avatar-2.webp",
+    "/images/avatar-3.webp",
+    "/images/avatar-4.webp",
+    "/images/avatar-5.webp",
+    "/images/avatar-6.webp",
+  ],
+} as const;

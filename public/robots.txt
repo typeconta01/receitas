@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /termos
+Disallow: /privacidade
+Disallow: /contato
