@@ -1,5 +1,5 @@
-/** Substitua "#" pelo link real do checkout (Hotmart, Kiwify, Kirvano, etc.) */
-export const CHECKOUT_URL = "#";
+export const CHECKOUT_URL = "https://pay.kiwify.com.br/hGRgRn9";
+export const FACEBOOK_PIXEL_ID = "2148530879272847";
 
 export const SITE = {
   name: "Semana Resolvida™",

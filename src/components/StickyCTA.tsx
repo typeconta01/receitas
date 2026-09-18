@@ -1,13 +1,17 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 import { CHECKOUT_URL } from "@/lib/constants";
 
 export function StickyCTA() {
+  const [mounted, setMounted] = useState(false);
   const [pastHero, setPastHero] = useState(false);
   const [offerInView, setOfferInView] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
+
     const hero = document.querySelector(".hero");
     const offer = document.getElementById("oferta");
 
@@ -33,13 +37,21 @@ export function StickyCTA() {
     };
   }, []);
 
+  if (!mounted) return null;
+
   const visible = pastHero && !offerInView;
 
-  return (
+  return createPortal(
     <div className={`sticky-cta ${visible ? "is-visible" : ""}`}>
-      <a href={CHECKOUT_URL} className="sticky-cta__btn">
+      <a
+        href={CHECKOUT_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sticky-cta__btn"
+      >
         Quero começar
       </a>
-    </div>
+    </div>,
+    document.body,
   );
 }

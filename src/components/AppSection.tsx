@@ -55,7 +55,7 @@ export function AppSection() {
         </div>
 
         <Reveal>
-          <CTAButton>Quero organizar minha alimentação</CTAButton>
+          <CTAButton href="#recursos">Quero organizar minha alimentação</CTAButton>
         </Reveal>
       </div>
     </section>

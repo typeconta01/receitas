@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Fraunces, Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import { FacebookPixel } from "@/components/FacebookPixel";
 import "./globals.css";
 
 const fraunces = Fraunces({
@@ -77,7 +78,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${fraunces.variable} ${jakarta.variable} ${manrope.variable} h-full antialiased`}
     >
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        <FacebookPixel />
+        {children}
+      </body>
     </html>
   );
 }

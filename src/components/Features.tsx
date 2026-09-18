@@ -4,7 +4,7 @@ import { Reveal } from "@/components/ui/Reveal";
 
 export function Features() {
   return (
-    <section className="sale sale--paper">
+    <section className="sale sale--paper" id="recursos">
       <div className="sale-wrap sale-wrap--wide">
         <Reveal>
           <h2 className="sale-title">

@@ -32,6 +32,9 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 html,
@@ -47,6 +50,13 @@ body {
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
+  width: 100%;
+  position: relative;
+}
+
+main {
+  overflow-x: hidden;
+  max-width: 100%;
 }
 
 ::selection {
@@ -370,6 +380,7 @@ video {
   background: #f6f1e8;
   text-align: center;
   font-family: var(--font-manrope), var(--font-jakarta), sans-serif;
+  scroll-margin-top: 12px;
 }
 
 .sale--paper {
@@ -2005,25 +2016,21 @@ video {
 
 .sticky-cta {
   position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
-  padding: 10px 12px calc(10px + env(safe-area-inset-bottom, 0px));
+  left: 12px;
+  right: 12px;
+  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
+  width: auto;
+  max-width: none;
   z-index: 40;
   opacity: 0;
   pointer-events: none;
-  transform: translate3d(0, 12px, 0);
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  overflow: hidden;
+  transform: none;
+  transition: opacity 0.25s ease;
 }
 
 .sticky-cta.is-visible {
   opacity: 1;
   pointer-events: auto;
-  transform: translate3d(0, 0, 0);
 }
 
 .sticky-cta__btn {
@@ -2032,6 +2039,7 @@ video {
   justify-content: center;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   box-sizing: border-box;
   min-height: 48px;
   padding: 0 14px;

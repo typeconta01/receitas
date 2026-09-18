@@ -47,7 +47,7 @@ export function MethodSection() {
             <i>→</i>
             <span>Aproveite</span>
           </p>
-          <CTAButton>Quero organizar minha semana</CTAButton>
+          <CTAButton href="#app">Quero organizar minha semana</CTAButton>
         </Reveal>
       </div>
     </section>

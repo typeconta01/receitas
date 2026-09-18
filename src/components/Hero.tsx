@@ -50,7 +50,7 @@ export function Hero() {
           Sem começar do zero todos os dias.
         </p>
 
-        <CTAButton className="hero__cta">
+        <CTAButton className="hero__cta" href="#metodo">
           Quero organizar minha alimentação
         </CTAButton>
 

@@ -49,7 +49,7 @@ export function BodyGoals() {
             <br />
             É tornar mais fácil <span className="sale-olive">continuar</span>.
           </p>
-          <CTAButton>Quero organizar minha alimentação</CTAButton>
+          <CTAButton href="#oferta">Quero organizar minha alimentação</CTAButton>
         </Reveal>
       </div>
     </section>
