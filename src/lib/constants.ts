@@ -4,7 +4,7 @@ export const FACEBOOK_PIXEL_ID = "2148530879272847";
 export const SITE = {
   name: "Semana Resolvida™",
   shortName: "Semana Resolvida",
-  price: "69,90",
+  price: "39,90",
   priceFull: "309",
   priceMid: "197",
   priceAlt: "97",
