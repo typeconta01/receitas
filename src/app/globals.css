@@ -14,7 +14,7 @@
   --color-ink: #2c2a26;
   --color-muted: #6a645c;
   --color-line: #e4dcd0;
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-manrope);
   --font-sans: var(--font-jakarta);
   --font-hero: var(--font-manrope);
 }
@@ -140,7 +140,7 @@ video {
 }
 
 .section-title {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.55rem, 7.4vw, 3rem);
   line-height: 1.18;
   font-weight: 560;
@@ -204,7 +204,7 @@ video {
 }
 
 .prose-sale__emphasis {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 1.35rem;
   color: #3e5a3c;
 }
@@ -380,6 +380,11 @@ video {
   text-align: center;
   font-family: var(--font-manrope), var(--font-jakarta), sans-serif;
   scroll-margin-top: 12px;
+}
+
+.sale:not([id]) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
 
 .sale--paper {
@@ -1022,14 +1027,14 @@ video {
   text-align: left;
 }
 
-.faq article {
+.faq details {
   background: #fff;
   border: 1px solid #eadfce;
   border-radius: 14px;
   overflow: hidden;
 }
 
-.faq button {
+.faq summary {
   width: 100%;
   background: none;
   border: 0;
@@ -1038,32 +1043,45 @@ video {
   padding: 14px 16px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 12px;
   font: inherit;
   font-weight: 800;
   cursor: pointer;
+  list-style: none;
 }
 
-.faq button span {
+.faq summary::-webkit-details-marker,
+.faq summary::marker {
+  display: none;
+  content: none;
+}
+
+.faq summary span {
   flex: 1;
   min-width: 0;
 }
 
-.faq button i {
+.faq summary i {
   color: #5a7348;
   font-style: normal;
+  flex: none;
 }
 
-.faq div[hidden] {
-  display: none;
+.faq summary i::before {
+  content: "+";
 }
 
-.faq article > div {
+.faq details[open] summary i::before {
+  content: "−";
+}
+
+.faq details > div {
   padding: 0 16px 14px;
   color: #5a544d;
 }
 
-.faq article > div p {
+.faq details > div p {
   margin: 0;
 }
 
@@ -1226,7 +1244,7 @@ video {
 }
 
 .pain-card strong {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 1.2rem;
 }
 
@@ -1259,7 +1277,7 @@ video {
 
 .loop-card p {
   margin: 0;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.1rem, 4.6vw, 1.35rem);
 }
 
@@ -1267,7 +1285,7 @@ video {
   text-align: center;
   font-size: 1.25rem;
   margin: 10px 0 24px;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
 }
 
 .method-grid {
@@ -1293,13 +1311,13 @@ video {
   place-items: center;
   background: #5c7a58;
   color: #fffdf9;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 1.4rem;
   margin-bottom: 16px;
 }
 
 .method-card h3 {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.35rem, 5vw, 1.7rem);
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -1317,7 +1335,7 @@ video {
   justify-content: center;
   gap: 10px;
   margin: 36px 0 8px;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.2rem, 3vw, 1.7rem);
   color: #3e5a3c;
 }
@@ -1460,7 +1478,7 @@ video {
 .feature-card h3,
 .bonus-card h3,
 .stack-card h3 {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 1.28rem;
   margin: 0 0 8px;
 }
@@ -1473,7 +1491,7 @@ video {
 }
 
 .chaos-flow {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1rem, 4.2vw, 1.2rem);
   color: #8a4d38;
   background: #f8ebe4;
@@ -1489,7 +1507,7 @@ video {
 }
 
 .quote-line {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.25rem, 5.5vw, 1.6rem);
   color: #3e5a3c;
 }
@@ -1551,7 +1569,7 @@ video {
   grid-column: 2;
   margin: 6px 0 0;
   color: #3e5a3c;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: 1.25rem;
 }
 
@@ -1791,7 +1809,7 @@ video {
 }
 
 .receipt__total s {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.4rem, 6vw, 1.8rem);
   color: #9a4d3a;
 }
@@ -1799,7 +1817,7 @@ video {
 .price-deny {
   text-align: center;
   margin-top: 28px;
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.35rem, 4vw, 2rem);
   line-height: 1.35;
 }
@@ -1830,7 +1848,7 @@ video {
 }
 
 .price-card__value {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(2.8rem, 16vw, 5.2rem);
   line-height: 1;
   color: #3e5a3c;
@@ -1933,7 +1951,7 @@ video {
 }
 
 .closing-headline {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.5rem, 4vw, 2.1rem);
   line-height: 1.25;
   color: #fbf8f4;
@@ -1998,7 +2016,7 @@ video {
 }
 
 .legal-page h1 {
-  font-family: var(--font-fraunces), serif;
+  font-family: var(--font-manrope), sans-serif;
   font-size: clamp(1.6rem, 7vw, 2.2rem);
   margin: 18px 0 20px;
 }

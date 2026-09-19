@@ -23,6 +23,7 @@ export function Bonuses() {
                   width={640}
                   height={400}
                   sizes="(max-width: 800px) 92vw, 300px"
+                  quality={70}
                 />
                 <p className="bonus__tag">Bônus #{item.number}</p>
                 <h3>{item.title}</h3>

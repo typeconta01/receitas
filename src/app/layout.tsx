@@ -1,24 +1,20 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
 import { FacebookPixel } from "@/components/FacebookPixel";
 import "./globals.css";
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
   subsets: ["latin"],
   display: "swap",
+  preload: true,
 });
 
 const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   display: "swap",
+  preload: false,
 });
 
 const title =
@@ -76,7 +72,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="pt-BR"
-      className={`${fraunces.variable} ${jakarta.variable} ${manrope.variable} h-full antialiased`}
+      className={`${jakarta.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <FacebookPixel />

@@ -23,6 +23,7 @@ export function Features() {
                   height={400}
                   className="feat-card__img"
                   sizes="(max-width: 800px) 92vw, 300px"
+                  quality={70}
                 />
                 <div className="feat-card__body">
                   <p className="feat-card__emoji" aria-hidden>

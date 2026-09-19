@@ -24,6 +24,7 @@ export function OfferStack() {
                     width={400}
                     height={520}
                     sizes="(max-width: 800px) 70vw, 220px"
+                    quality={70}
                   />
                 </div>
                 <h3>{item.title}</h3>

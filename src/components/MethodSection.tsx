@@ -30,6 +30,7 @@ export function MethodSection() {
                   height={420}
                   className="method-visual__img"
                   sizes="(max-width: 800px) 92vw, 300px"
+                  quality={70}
                 />
                 <span className="method-visual__num">{step.number}</span>
                 <h3>{step.title}</h3>

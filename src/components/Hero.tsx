@@ -15,11 +15,13 @@ export function Hero() {
         <Image
           src={IMAGES.hero}
           alt="Semana Resolvida™ — mulher, refeições organizadas e aplicativo de cardápio"
-          width={1207}
-          height={1303}
+          width={1000}
+          height={1080}
           className="hero__photo"
-          priority
-          sizes="100vw"
+          loading="eager"
+          fetchPriority="high"
+          quality={70}
+          sizes="(max-width: 700px) 100vw, 680px"
         />
       </div>
 

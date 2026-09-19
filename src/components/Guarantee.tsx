@@ -14,6 +14,8 @@ export function Guarantee() {
             width={180}
             height={180}
             className="seal"
+            sizes="180px"
+            quality={70}
           />
           <h2 className="sale-title">
             Você tem <span className="sale-olive">7 dias</span> para conhecer o

@@ -47,6 +47,7 @@ export function Testimonials() {
                   width={852}
                   height={1600}
                   sizes="(max-width: 480px) 92vw, 400px"
+                  quality={70}
                 />
                 <figcaption className="sr-only">{item.name}</figcaption>
               </figure>

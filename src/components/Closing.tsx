@@ -29,10 +29,12 @@ export function Closing() {
           <Image
             src={IMAGES.hero}
             alt="Aplicativo Semana Resolvida e refeições organizadas"
-            width={1207}
-            height={1303}
+            width={1000}
+            height={1080}
             className="sale-photo sale-photo--full"
             sizes="(max-width: 800px) 92vw, 560px"
+            quality={70}
+            fetchPriority="low"
           />
         </Reveal>
 

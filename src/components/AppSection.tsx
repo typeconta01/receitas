@@ -2,7 +2,6 @@ import Image from "next/image";
 import { IMAGES } from "@/lib/constants";
 import { appCallouts } from "@/content/offer";
 import { CTAButton } from "@/components/ui/CTAButton";
-import { PhoneMockup } from "@/components/ui/PhoneMockup";
 import { Reveal } from "@/components/ui/Reveal";
 
 export function AppSection() {
@@ -20,14 +19,6 @@ export function AppSection() {
         </Reveal>
 
         <div className="app-show">
-          <Reveal delay={40}>
-            <div className="app-show__side">
-              <PhoneMockup
-                src={IMAGES.appRecipes}
-                alt="Tela de receitas do aplicativo"
-              />
-            </div>
-          </Reveal>
           <Reveal>
             <Image
               src={IMAGES.appHome}
@@ -36,15 +27,8 @@ export function AppSection() {
               height={980}
               className="app-show__main"
               sizes="(max-width: 700px) 70vw, 280px"
+              quality={70}
             />
-          </Reveal>
-          <Reveal delay={80}>
-            <div className="app-show__side app-show__side--last">
-              <PhoneMockup
-                src={IMAGES.appMenu}
-                alt="Tela de cardápio semanal"
-              />
-            </div>
           </Reveal>
         </div>
 

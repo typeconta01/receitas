@@ -21,6 +21,8 @@ export function Pricing() {
               height={780}
               className="offer__mock"
               sizes="(max-width: 700px) 88vw, 420px"
+              quality={70}
+              fetchPriority="low"
             />
 
             <p className="offer__from">

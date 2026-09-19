@@ -12,6 +12,8 @@ export function Footer() {
           width={180}
           height={58}
           className="site-footer__logo"
+          sizes="180px"
+          quality={70}
         />
         <nav className="site-footer__nav" aria-label="Informações legais">
           <Link href="/termos">Termos de Uso</Link>

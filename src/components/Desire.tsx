@@ -22,6 +22,7 @@ export function Desire() {
               width={400}
               height={300}
               sizes="(max-width: 700px) 46vw, 220px"
+              quality={70}
             />
           ))}
         </div>

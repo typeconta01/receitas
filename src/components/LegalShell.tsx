@@ -13,7 +13,14 @@ export function LegalShell({
     <main className="legal-page">
       <div className="container narrow">
         <Link href="/">
-          <Image src={IMAGES.logo} alt={SITE.name} width={180} height={58} />
+          <Image
+            src={IMAGES.logo}
+            alt={SITE.name}
+            width={180}
+            height={58}
+            sizes="180px"
+            quality={70}
+          />
         </Link>
         <p>
           <Link href="/">← Voltar para a oferta</Link>

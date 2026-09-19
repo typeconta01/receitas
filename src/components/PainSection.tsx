@@ -31,6 +31,7 @@ export function PainSection() {
             height={680}
             className="sale-photo"
             sizes="(max-width: 800px) 92vw, 720px"
+            quality={70}
           />
         </Reveal>
 
