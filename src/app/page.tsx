@@ -19,7 +19,6 @@ import { Guarantee } from "@/components/Guarantee";
 import { FAQ } from "@/components/FAQ";
 import { Closing } from "@/components/Closing";
 import { Footer } from "@/components/Footer";
-import { StickyCTA } from "@/components/StickyCTA";
 
 export default function Home() {
   return (
@@ -45,7 +44,6 @@ export default function Home() {
       <FAQ />
       <Closing />
       <Footer />
-      <StickyCTA />
     </main>
   );
 }

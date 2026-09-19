@@ -49,7 +49,6 @@ body {
   font-family: var(--font-jakarta), sans-serif;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: calc(84px + env(safe-area-inset-bottom, 0px));
   width: 100%;
   position: relative;
 }
@@ -2014,48 +2013,6 @@ video {
   color: #3e5a3c;
 }
 
-.sticky-cta {
-  position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: calc(10px + env(safe-area-inset-bottom, 0px));
-  width: auto;
-  max-width: none;
-  z-index: 40;
-  opacity: 0;
-  pointer-events: none;
-  transform: none;
-  transition: opacity 0.25s ease;
-}
-
-.sticky-cta.is-visible {
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.sticky-cta__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  box-sizing: border-box;
-  min-height: 48px;
-  padding: 0 14px;
-  border-radius: 999px;
-  background: #e25a2e;
-  color: #fff;
-  text-decoration: none;
-  font-family: var(--font-manrope), sans-serif;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  font-size: 0.84rem;
-  box-shadow: 0 12px 24px rgba(226, 90, 46, 0.28);
-  -webkit-tap-highlight-color: transparent;
-}
-
 .reveal {
   opacity: 1;
   transform: none;
@@ -2326,14 +2283,6 @@ video {
     box-shadow: 0 22px 40px rgba(80, 62, 42, 0.12);
   }
 
-  .sticky-cta {
-    display: none;
-  }
-
-  body {
-    padding-bottom: 0;
-  }
-
   .mosaic__main {
     height: 340px;
   }
@@ -2399,8 +2348,7 @@ video {
   }
 
   .reveal,
-  .cta-button,
-  .sticky-cta {
+  .cta-button {
     transition: none;
   }
 
