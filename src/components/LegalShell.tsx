@@ -1,6 +1,4 @@
-import Image from "next/image";
 import Link from "next/link";
-import { IMAGES, SITE } from "@/lib/constants";
 
 export function LegalShell({
   title,
@@ -12,18 +10,8 @@ export function LegalShell({
   return (
     <main className="legal-page">
       <div className="container narrow">
-        <Link href="/">
-          <Image
-            src={IMAGES.logo}
-            alt={SITE.name}
-            width={180}
-            height={58}
-            sizes="180px"
-            quality={70}
-          />
-        </Link>
         <p>
-          <Link href="/">← Voltar para a oferta</Link>
+          <Link href="/claude">← Voltar</Link>
         </p>
         <h1>{title}</h1>
         {children}

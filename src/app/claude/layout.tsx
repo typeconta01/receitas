@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import "./globals.css";
+import { Inter } from "next/font/google";
+import { PRODUCT_NAME } from "@/lib/claude-config";
+import "./claude.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 const title = "Guia Prático do Claude AI | Do Zero à Prática";
 const description =
@@ -21,7 +29,7 @@ export const metadata: Metadata = {
     description,
     type: "website",
     locale: "pt_BR",
-    siteName: "Guia Prático do Claude AI",
+    siteName: PRODUCT_NAME,
   },
   twitter: {
     card: "summary_large_image",
@@ -34,10 +42,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
-  return (
-    <html lang="pt-BR" className="h-full antialiased">
-      <body className="min-h-full">{children}</body>
-    </html>
-  );
+export default function ClaudeLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <div className={`${inter.variable} ${inter.className} claude-lp`}>{children}</div>;
 }

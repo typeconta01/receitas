@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LegalShell } from "@/components/LegalShell";
 
 export const metadata: Metadata = {
-  title: "Contato | Semana Resolvida™",
+  title: "Contato | Guia Prático do Claude AI",
   robots: { index: false, follow: true },
 };
 
@@ -11,16 +11,7 @@ export default function ContatoPage() {
     <LegalShell title="Contato">
       <p>
         Precisa de ajuda com acesso, pagamento ou garantia? Fale com o
-        suporte.
-      </p>
-      <p>
-        E-mail:{" "}
-        <a href="mailto:suporte@semanaresolvida.com.br">
-          suporte@semanaresolvida.com.br
-        </a>
-      </p>
-      <p>
-        Substitua este e-mail pelo canal oficial antes de publicar a página.
+        suporte pelo canal informado no checkout após a compra.
       </p>
     </LegalShell>
   );

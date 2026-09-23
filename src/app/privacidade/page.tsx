@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LegalShell } from "@/components/LegalShell";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | Semana Resolvida™",
+  title: "Política de Privacidade | Guia Prático do Claude AI",
   robots: { index: false, follow: true },
 };
 

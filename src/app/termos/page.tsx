@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { LegalShell } from "@/components/LegalShell";
 
 export const metadata: Metadata = {
-  title: "Termos de Uso | Semana Resolvida™",
+  title: "Termos de Uso | Guia Prático do Claude AI",
   robots: { index: false, follow: true },
 };
 
@@ -10,9 +10,8 @@ export default function TermosPage() {
   return (
     <LegalShell title="Termos de Uso">
       <p>
-        Ao adquirir o Semana Resolvida™, você concorda com estes termos. O
-        produto é educacional e de organização alimentar, entregue em formato
-        digital.
+        Ao adquirir o Guia Prático do Claude AI, você concorda com estes
+        termos. O produto é educacional e entregue em formato digital.
       </p>
       <p>
         O acesso é pessoal e intransferível. É proibido copiar, revender,
