@@ -1,16 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
-const title = "Guia Prático do Claude AI | Do Zero à Prática";
+const title = "Digital products company";
 const description =
-  "Aprenda passo a passo como começar a usar Claude AI e aplicar a ferramenta na rotina, trabalho e negócios.";
+  "We are a company specialized in digital products for people and businesses across different languages and markets.";
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
   viewportFit: "cover",
-  themeColor: "#F7F5F2",
+  themeColor: "#0B1F3A",
 };
 
 export const metadata: Metadata = {
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
     title,
     description,
     type: "website",
-    locale: "pt_BR",
-    siteName: "Guia Prático do Claude AI",
+    locale: "en_US",
+    siteName: "Digital products",
   },
   twitter: {
     card: "summary_large_image",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className="h-full antialiased">
+    <html lang="en" className="h-full antialiased">
       <body className="min-h-full">{children}</body>
     </html>
   );
