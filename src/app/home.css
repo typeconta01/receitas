@@ -133,8 +133,10 @@
 
 .home__frame--round {
   border-radius: 36px;
-  max-width: 380px;
+  max-width: 420px;
   margin-inline: auto;
+  background: transparent;
+  box-shadow: none;
 }
 
 .home__band {

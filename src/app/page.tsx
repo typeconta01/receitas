@@ -153,10 +153,10 @@ export default function Home() {
           </div>
           <div className="home__frame home__frame--round">
             <Image
-              src="/images/home/publish.png"
-              alt="Illustration of colorful digital guides turning into light"
-              width={1024}
-              height={1024}
+              src="/images/home/launch.png"
+              alt="Illustration of a person launching a product on a rocket"
+              width={800}
+              height={800}
               sizes="(max-width: 800px) 80vw, 360px"
               quality={75}
             />
