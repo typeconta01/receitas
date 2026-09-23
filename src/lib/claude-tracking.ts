@@ -1,4 +1,9 @@
-import { CHECKOUT_URL, META_PIXEL_ID, GA_MEASUREMENT_ID } from "@/lib/claude-config";
+import {
+  CHECKOUT_URL,
+  GA_MEASUREMENT_ID,
+  getMetaPixelId,
+} from "@/lib/claude-config";
+import type { ClaudeLang } from "@/lib/claude-i18n";
 
 const UTM_KEYS = [
   "utm_source",
@@ -48,7 +53,9 @@ export function track(event: TrackEvent) {
   if (event === "InitiateCheckout") w.gtag("event", "begin_checkout");
 }
 
-export const trackingReady = {
-  meta: Boolean(META_PIXEL_ID),
-  ga: Boolean(GA_MEASUREMENT_ID),
-};
+export function trackingReady(lang: ClaudeLang = "pt") {
+  return {
+    meta: Boolean(getMetaPixelId(lang)),
+    ga: Boolean(GA_MEASUREMENT_ID),
+  };
+}

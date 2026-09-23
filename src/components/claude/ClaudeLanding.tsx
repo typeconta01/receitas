@@ -21,7 +21,7 @@ import type { ClaudeLang } from "@/lib/claude-i18n";
 export function ClaudeLanding({ lang = "pt" }: { lang?: ClaudeLang }) {
   return (
     <main>
-      <Tracking />
+      <Tracking lang={lang} />
       <Hero lang={lang} />
       <ProblemSection lang={lang} />
       <BeliefShift lang={lang} />

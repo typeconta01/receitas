@@ -45,7 +45,7 @@ export function Hero({ lang = "pt" }: { lang?: ClaudeLang }) {
           </div>
 
           <div className="cl-hero__cta">
-            <Button>{t.hero.cta}</Button>
+            <Button lang={lang}>{t.hero.cta}</Button>
             <p className="cl-micro cl-hero__secure">
               <svg
                 viewBox="0 0 16 16"

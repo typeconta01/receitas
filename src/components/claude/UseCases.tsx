@@ -52,7 +52,7 @@ export function UseCases({ lang = "pt" }: { lang?: ClaudeLang }) {
         </div>
         <p className="cl-after">{t.uses.after}</p>
         <div style={{ display: "flex", justifyContent: "center" }}>
-          <Button>{t.uses.cta}</Button>
+          <Button lang={lang}>{t.uses.cta}</Button>
         </div>
       </div>
     </section>

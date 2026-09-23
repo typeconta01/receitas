@@ -44,7 +44,7 @@ export function MobileStickyCTA({ lang = "pt" }: { lang?: ClaudeLang }) {
 
   return (
     <div className={`cl-sticky${visible ? "" : " is-hidden"}`}>
-      <Button>{t.sticky}</Button>
+      <Button lang={lang}>{t.sticky}</Button>
     </div>
   );
 }

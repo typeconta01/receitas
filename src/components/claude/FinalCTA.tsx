@@ -14,7 +14,7 @@ export function FinalCTA({ lang = "pt" }: { lang?: ClaudeLang }) {
             <p key={line}>{line}</p>
           ))}
         </div>
-        <Button>{t.final.cta}</Button>
+        <Button lang={lang}>{t.final.cta}</Button>
         <p className="cl-micro" style={{ color: "#c8c3bd" }}>
           {t.final.note}
         </p>

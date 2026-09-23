@@ -54,7 +54,7 @@ export function Offer({ lang = "pt" }: { lang?: ClaudeLang }) {
           <p className="cl-offer__from">{t.offer.from}</p>
           <p className="cl-offer__price">{PRODUCT_PRICE}</p>
           <p className="cl-offer__once">{t.offer.once}</p>
-          <Button>{t.offer.cta}</Button>
+          <Button lang={lang}>{t.offer.cta}</Button>
           <p className="cl-micro">{t.offer.secure}</p>
         </Card>
       </div>
