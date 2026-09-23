@@ -8,7 +8,7 @@ export const CHECKOUT_URL = "#";
 export const CHECKOUT_URL_BY_LANG = {
   pt: CHECKOUT_URL,
   en: "https://pay.hotmart.com/O107729627M?off=47zfjy6e&checkoutMode=10",
-  es: CHECKOUT_URL,
+  es: "https://pay.hotmart.com/L107729869T?off=evkdhsmr&checkoutMode=10",
 } as const;
 
 export function getCheckoutUrl(
@@ -30,7 +30,7 @@ export const META_PIXEL_ID = "";
 export const META_PIXEL_ID_BY_LANG = {
   pt: META_PIXEL_ID,
   en: "2307602136723013",
-  es: META_PIXEL_ID,
+  es: "1990320615146402",
 } as const;
 
 export function getMetaPixelId(
